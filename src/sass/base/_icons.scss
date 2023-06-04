@@ -1,0 +1,41 @@
+.icon-circle {
+    background-color: $color-bg-icon;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 14px;
+    &:hover {
+        background-color: $color-link-active; 
+    }
+}
+
+.icon-active {
+    background-color: $color-link-active;
+}
+
+.ico {
+    cursor: pointer;
+    display: block;
+    width: 16px;
+    height: 17px;
+}    
+
+.ico_fb {    
+    background-image: url('../../img/icons/icon-fb.png');
+}
+
+.ico_tw {
+    background-image: url('../../img/icons/icon-tw.png');
+}
+
+.ico_g {
+    background-image: url('../../img/icons/icon-google.png');
+}
+
+.ico_in {
+    background-image: url('../../img/icons/icon-in.png');
+}
+

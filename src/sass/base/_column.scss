@@ -1,0 +1,37 @@
+.column {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    @include media-mobile {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+.column__title h3 {
+    @include font ($size: 3.6rem, $height: 4.8rem, $weight: 700, $style: normal); 
+    color: $color-main;
+    margin-top: 80px;
+    margin-bottom: 24px;
+    @include media-mobile {
+        @include font ($size: 2.6rem, $height: 3.2rem, $weight: 700, $style: normal); 
+        margin-bottom: 14px;
+        margin-top: 100px;
+    }
+}
+
+.column__text {
+    @include font ($size: 1.6rem, $height: 2.6rem, $weight: 400, $style: normal); 
+    color: $color-text;
+    margin-bottom: 90px;
+    p {
+        margin-bottom: 20px;
+        &:last-child {
+            margin-bottom: 0; 
+        }
+    }
+    @include media-mobile {
+        margin-bottom: 20px;
+    }
+}
+

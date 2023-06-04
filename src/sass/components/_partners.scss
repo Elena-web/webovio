@@ -1,0 +1,41 @@
+.partners {
+    width: 65%;
+    height: auto;
+    padding: 40px 100px 44px 55px;
+    position: absolute;
+    right: 0;
+    top: -110px;
+    background-color: $color-heading;
+    @include media-laptop {
+       width: 80%; 
+       padding: 30px 80px 34px 45px;
+    }
+    @include media-tabletbig {
+        width: 70%; 
+        padding: 20px 60px 24px 35px;
+    }
+    @include media-tablet {
+        display: none;
+    }
+}
+.partners__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+.partners__logo {
+    width: 100%;
+    height: 100%;
+    margin-right: 56px;
+    &:last-child {
+        margin-right: 0;
+    }
+    @include media-laptop {
+        margin-right: 46px; 
+    }
+    @include media-tabletbig {
+        margin-right: 36px; 
+    } 
+}
+    

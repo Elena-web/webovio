@@ -1,0 +1,153 @@
+.footer {
+    padding: 246px 0 34px;    
+    background-image: url('../../img/bg/bg.jpg'); 
+    background-size: cover;
+    @include media-tablet {
+        padding: 40px 0 24px; 
+    }
+}
+
+.footer__row { 
+    padding: 64px 0 0;
+    position: relative;
+    @include media-tablet {
+        padding: 0;
+    }
+}
+
+.footer__top {
+    display: flex;
+    padding-bottom: 52px;
+    border-bottom: 1px solid $color-line;
+    @include media-mobile {
+        padding-bottom: 22px;
+    }
+    @include media-mobilesmall {
+        display: block;
+        border: none;
+        padding-bottom: 0;
+    }
+}
+
+.footer__phone {
+    margin-right: 128px;
+    @include media-mobile {
+        margin-right: 28px;
+    }
+}
+
+.footer__text {
+    @include font ($size: 1.6rem, $height: 4rem, $weight: 400, $style: normal);
+    color: $color-text-footer;
+    margin-bottom: 8px;
+    @include media-mobile {
+        @include font ($size: 1.4rem, $height: 2.4rem, $weight: 400, $style: normal);
+    }
+}
+
+.top {
+    color: $color-heading;
+    @include font ($size: 1.6rem, $height: 4rem, $weight: 700, $style: normal);
+    @include media-mobile {
+        @include font ($size: 1.4rem, $height: 3.5rem, $weight: 400, $style: normal);
+    }
+}
+
+.light {
+    text-transform: uppercase;
+    color: $color-heading;
+    @include font ($size: 1.6rem, $height: 4rem, $weight: 700, $style: normal);
+}
+
+.footer__nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0;
+    @include media-tablet {
+        display: block;
+        padding: 40px 0;
+    }
+    @include media-mobilesmall {
+        padding: 5px 0 20px;
+    }
+}
+
+.footer__bloc1 {
+    display: flex;
+    justify-content: space-between;
+    width: 60.2%;
+    @include columns($width: 23.7%);
+    @include media-tablet {
+        @include columns($width: 33%);
+        width: 100%;
+    }
+    @include media-mobilesmall {
+        display: none;
+    }
+}
+
+.list__nav {
+    list-style: none;
+}
+
+.list__text {
+    @include font ($size: 1.6rem, $height: 3.8rem, $weight: 600, $style: normal); 
+    @include media-mobile {
+        @include font ($size: 1.4rem, $height: 2.8rem, $weight: 600, $style: normal); 
+    }
+}
+
+.footer__bloc2 {
+    padding-left: 110px;
+    border-left: 1px solid $color-line;
+    @include media-tabletbig {
+        padding-left: 80px;
+    }
+    @include media-tablet {        
+        padding: 50px 0 0;
+        border-left: none;
+        border-top: 1px solid $color-line;
+    }
+    @include media-mobile {
+        padding: 10px 0 0;
+    }
+}
+
+.mail {
+    @include font ($size: 2.4rem, $height: 3.8rem, $weight: 700, $style: normal);
+    text-transform: none; 
+    color: $color-heading;
+    @include media-mobile {
+        @include font ($size: 2rem, $height: 3.8rem, $weight: 700, $style: normal);
+    }
+    @include media-mobilesmall {
+        @include font ($size: 1.8rem, $height: 2.8rem, $weight: 700, $style: normal);
+    }
+}
+
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 27px 0 0;
+    border-top: 1px solid $color-line;
+    @include media-mobilesmall {
+        padding: 17px 0 0;
+    }
+}
+
+.footer__copyright.small {
+    color: $color-footer;
+    @include media-mobile {
+        @include font ($size: 1.2rem, $height: 1.2rem, $weight: 300, $style: normal);
+    }
+}
+
+.footer__logo {
+    @include media-mobile {
+        width: 30%;
+    } 
+    @include media-mobilesmall {
+        width: 20%;
+    }   
+}

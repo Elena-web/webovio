@@ -1,0 +1,94 @@
+.header {
+    width: 100%;
+    height: 1150px;
+    background: url('../../img/bg/bg-header.jpg') no-repeat; 
+    background-size: cover;
+    @include media-laptop {
+        height: 811px;
+    }
+    @include media-tablet {
+        height: 611px;
+    }
+    @include media-mobile {
+        height: 511px;
+    }
+    @include media-mobilesmall {
+        height: 311px;
+    }
+}
+
+.header__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+    margin-bottom: 125px;
+    @include media-tabletbig {
+        margin-bottom: 85px;
+    }
+    @include media-tablet {
+        margin-bottom: 45px;
+    }
+    @include media-mobilesmall {
+        margin-bottom: 15px;
+    }
+}
+
+.header__logo {
+    width: 30%;
+    height: auto;
+}
+
+.header__content {
+    width: 50%;
+    @include media-tablet {
+        width: 70%;
+    }
+    @include media-mobile {
+        width: 80%;
+    }
+}
+
+.header__text {
+    color: $color-heading;
+    @include media-mobilesmall {
+        @include font ($size: 1.3rem, $height: 2rem, $weight: 400, $style: normal);
+    }
+}
+
+.header__text-desc {
+    @include font ($size: 1.6rem, $height: 2.6rem, $weight: 400, $style: normal);
+    color: $color-heading;
+    @include media-mobilesmall {
+        @include font ($size: 1.3rem, $height: 2rem, $weight: 400, $style: normal);
+    }
+}
+
+ .header__title h1 {
+    @include font ($size: 6rem, $height: 7.4rem, $weight: 700, $style: normal);
+    margin-top: 22px;
+    margin-bottom: 24px;
+    color: $color-heading;
+    text-align: left;
+    @include media-tablet {
+        @include font ($size: 5rem, $height: 6rem, $weight: 700, $style: normal);
+    } 
+    @include media-mobile {
+        @include font ($size: 3.5rem, $height: 6rem, $weight: 700, $style: normal);
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    @include media-mobilesmall {
+        @include font ($size: 2rem, $height: 2.5rem, $weight: 700, $style: normal);
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+.header__link {
+    margin-top: 45px;
+    @include media-tablet {
+        margin-top: 15px;
+    }
+}
+

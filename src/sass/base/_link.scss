@@ -1,0 +1,15 @@
+.link {    
+    @extend %transition;
+    @include font ($size: 1.6rem, $height: 1.8rem, $weight: 400, $style: normal);
+    color: $color-link;    
+}
+
+.link:focus,
+.link:hover,
+.active {
+    color: $color-link-active;
+}
+
+.color {
+    color: $color-link-active; 
+}
