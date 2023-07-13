@@ -31,6 +31,11 @@ button {
   cursor: pointer;
 }
 
+.wrapper {
+  margin: 0 auto;
+  max-width: 1770px;
+}
+
 .container {
   max-width: 77%;
   margin: 0 auto;

@@ -26,20 +26,22 @@ button {
     cursor: pointer;
 }
 
+.wrapper {
+    margin: 0 auto;
+    max-width: 1770px;
+}
 .container {
     max-width: 77%;
     margin: 0 auto;
 }
 
 .small {
-   
     @include font ($size: 1.4rem, $height: 2.1rem, $weight: 400, $style: normal);
 }
 
 h1 {
     @include font ($size: 6rem, $height: 7.4rem, $weight: 700, $style: normal);
 }
-
 
 h2 {
     @include font ($size: 6rem, $height: 7.4rem, $weight: 700, $style: normal);
